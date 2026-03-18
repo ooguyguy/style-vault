@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Large renders
+*.psd
+*.ai
+*.sketch
+
+# Node
+node_modules/
+
+# Temp
+*.tmp
