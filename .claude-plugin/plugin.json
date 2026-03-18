@@ -1,0 +1,8 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "Apply curated visual styles instantly. Each style is a forensic profile — colors, typography, layout, CSS tokens, replication rules. Load a style and everything you build follows it.",
+  "author": {
+    "name": "Guy"
+  }
+}
