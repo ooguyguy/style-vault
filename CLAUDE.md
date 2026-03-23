@@ -31,6 +31,41 @@ style-vault/
 4. Add entry to `catalog.md`
 5. Tag it
 
+## Commands
+
+```bash
+# This is a content repo -- no build step. Browse profiles directly:
+cat profiles/the-way-of-code/profile.md
+
+# List all profiles
+ls profiles/
+
+# List all tags
+cat tags.md
+```
+
+## Profile Schema (profile.md)
+
+Each profile uses YAML frontmatter followed by 10 analysis sections:
+```yaml
+---
+name: "Display Name"
+source: "https://..."
+creator: "Designer / Studio"
+date_profiled: YYYY-MM-DD
+analysis: Full | Partial
+corpus_size: "N views (description)"
+tags: [tag1, tag2, ...]
+---
+```
+**Sections:** 1. First Impression DNA, 2. Color System, 3. Typography, 4. Layout & Composition, 5. Texture & Surface, 6. Motion & Interaction, 7. Iconography & Illustration, 8. Photography & Media, 9. Mood & Atmosphere, 10. Replication Rules
+
+## Gotchas
+
+- This repo is also a **Claude Code plugin** (see `.claude-plugin/plugin.json`) -- `/analyze` and `/styles` commands are available
+- Never fabricate hex values -- always extract from computed styles or eyedrop tools
+- Screenshots should be optimized PNG, max 6-8 per profile
+
 ## Integration
 
 - Profiles feed into `design_ai_playbook` bible chapters as specimens
