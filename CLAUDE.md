@@ -2,6 +2,14 @@
 
 A curated collection of visual style profiles — designs Guy admires, analyzed forensically using the visual-style-forensics skill. Each profile is a complete DNA map: colors, typography, composition, texture, mood, and replication rules.
 
+## Design System
+
+This folder's design system inventory lives in:
+- [`Design.md`](./Design.md) — markdown source of truth (tokens, components, voice rules, drift findings, lessons)
+- [`Design.html`](./Design.html) — Hebrew RTL visual companion (color swatches, type specimens, drift table)
+
+**Before any visual work in this folder, read `Design.md`.** Note: this is a META design folder — every hex/font here is *cited from a third-party source being analyzed*, never proposed as design. The hard rule from this CLAUDE.md (no fabricated hex values) is the load-bearing constraint.
+
 ## Structure
 
 ```

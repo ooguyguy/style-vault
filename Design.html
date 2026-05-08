@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>מערכת עיצוב — style-vault</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Heebo:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; --jpsa-blue:#00609C; --jpsa-teal:#005480; --jpsa-gold:#B49759; --bg:#fafaf7; --surface:#fff; --ink:#1a1a1a; --muted:#5a5a5a; --border:#e6e0d3; --good:#4C9C2E; --warn:#B49759; --bad:#c0392b; }
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{font-family:'Heebo','Crimson Text',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+  .wrap{max-width:1100px;margin:0 auto;padding:32px 28px 80px}
+  .hero{background:linear-gradient(135deg,var(--jpsa-blue) 0%,var(--jpsa-teal) 100%);color:#fff;padding:36px 28px;border-radius:8px;margin-bottom:28px;box-shadow:0 6px 30px rgba(0,96,156,0.12)}
+  .hero h1{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;margin:0 0 8px;letter-spacing:-0.5px}
+  .hero .meta{font-size:13px;opacity:0.92}
+  section{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:24px 28px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+  section h2{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0 0 14px;color:var(--jpsa-teal);border-block-end:2px solid var(--jpsa-gold);padding-block-end:6px}
+  section h3{font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;margin:18px 0 10px;color:var(--jpsa-blue);text-transform:uppercase;letter-spacing:0.6px}
+  .swatch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+  .swatch{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#fff}
+  .swatch .chip{height:80px;display:block}
+  .swatch .info{padding:9px 12px}
+  .swatch .hex{font-family:'JetBrains Mono','Courier New',monospace;font-size:13px;direction:ltr;text-align:left;font-weight:600}
+  .swatch .role{font-size:11px;color:var(--muted);margin-block-start:3px}
+  .badge{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:10px;padding:2px 8px;border-radius:3px;letter-spacing:0.4px;margin-block-start:5px;text-transform:uppercase}
+  .badge.ok{background:rgba(76,156,46,0.14);color:var(--good)}
+  .badge.warn{background:rgba(180,151,89,0.18);color:#8a6f30}
+  .badge.bad{background:rgba(192,57,43,0.12);color:var(--bad)}
+  table{width:100%;border-collapse:collapse;margin-block-start:10px;font-size:14px}
+  th{background:var(--jpsa-teal);color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;padding:9px 12px;text-align:start}
+  td{padding:10px 12px;border-block-end:1px solid var(--border);vertical-align:top}
+  tr.sev-bad td:first-child{border-inline-start:4px solid var(--bad)}
+  tr.sev-warn td:first-child{border-inline-start:4px solid var(--warn)}
+  code{font-family:'JetBrains Mono',monospace;font-size:12px;background:var(--bg);padding:2px 6px;border-radius:3px;direction:ltr;display:inline-block}
+  .lesson{background:var(--bg);border-inline-start:3px solid var(--jpsa-gold);padding:11px 15px;margin-block-end:9px;border-radius:0 6px 6px 0;font-size:14px}
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-block-start:10px}
+  .stat{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:12px 10px;text-align:center}
+  .stat .num{font-family:'Montserrat',sans-serif;font-weight:800;font-size:24px;color:var(--jpsa-blue);display:block}
+  .stat .lbl{font-size:11px;color:var(--muted);margin-block-start:3px;display:block}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-block-start:28px;padding-block-start:18px;border-block-start:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>מערכת עיצוב — style-vault</h1>
+    <div class="meta">תמונת מצב · 7 במאי 2026 · שלב 1 מתוך תיקון עיצוב פורטפוליו</div>
+  </header>
+  <section><h2>כרטיס פרויקט</h2><p>פולדר מטא של מערכת עיצוב — אוסף פרופילי סגנון ויזואליים שגיא מעריך, מנותחים פורנזית. אינו מחזיק הקסים או פונטים משלו — רק <em>מצטט</em> אותם מ-source profiles. גם פלאגין Claude Code עם הפקודות /analyze, /styles, /the-way-of-code.</p>
+  <div class="stat-grid">
+    <div class="stat"><span class="num">2</span><span class="lbl">פרופילים</span></div>
+    <div class="stat"><span class="num">6</span><span class="lbl">PNG (Way of Code)</span></div>
+    <div class="stat"><span class="num">0</span><span class="lbl">HTML/CSS פנימי</span></div>
+    <div class="stat"><span class="num">3</span><span class="lbl">commands</span></div>
+    <div class="stat"><span class="num">1</span><span class="lbl">skill</span></div>
+  </div>
+  </section>
+  <section><h2>פלטה — מצוטטת מהפרופילים</h2>
+    <h3>The Way of Code (Rick Rubin / Tetragrammaton)</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><span class="chip" style="background:#FAF9F5"></span><div class="info"><div class="hex">#FAF9F5</div><div class="role">פרגמנט (~70%)</div><span class="badge ok">חם, ניטרלי</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#1F1E1D"></span><div class="info"><div class="hex">#1F1E1D</div><div class="role">שחור-חם (~20%)</div><span class="badge ok">לא pure-black</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#87867F"></span><div class="info"><div class="hex">#87867F</div><div class="role">אפור חם משני</div><span class="badge ok">ניטרלי</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#F0EEE6"></span><div class="info"><div class="hex">#F0EEE6</div><div class="role">בז' עבודות</div><span class="badge ok">ניטרלי</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#D97757"></span><div class="info"><div class="hex">#D97757</div><div class="role">טרה-קוטה (קוד בלבד)</div><span class="badge ok">accent מבודד</span></div></div>
+    </div>
+    <h3>Graphic Atlas (Bible System)</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><span class="chip" style="background:#F5EFE7"></span><div class="info"><div class="hex">#F5EFE7</div><div class="role">cream bg (~60%)</div><span class="badge ok">Bible System</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#FFFAF2"></span><div class="info"><div class="hex">#FFFAF2</div><div class="role">ivory surface</div><span class="badge ok">Bible System</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#2F2923"></span><div class="info"><div class="hex">#2F2923</div><div class="role">dark brown text</div><span class="badge ok">חום-חם</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#9C7247"></span><div class="info"><div class="hex">#9C7247</div><div class="role">gold accent</div><span class="badge ok">קרוב ל-JPSA gold</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#458F95"></span><div class="info"><div class="hex">#458F95</div><div class="role">cyan family marker</div><span class="badge ok">muted</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#9A5C79"></span><div class="info"><div class="hex">#9A5C79</div><div class="role">magenta family marker</div><span class="badge ok">muted, לא lavender</span></div></div>
+    </div>
+  </section>
+  <section><h2>טיפוגרפיה — מצוטטת</h2>
+    <table><thead><tr><th>פונט</th><th>תפקיד במקור</th><th>פרופיל</th></tr></thead><tbody>
+      <tr><td>Goudy Old Style</td><td>כל הטקסט באתר</td><td>the-way-of-code</td></tr>
+      <tr><td>Courier Prime</td><td>נווט + קוד</td><td>the-way-of-code</td></tr>
+      <tr><td>Heebo</td><td>גוף עברי</td><td>graphic-atlas</td></tr>
+      <tr><td>Cormorant Garamond</td><td>תצוגה אנגלית</td><td>graphic-atlas</td></tr>
+      <tr><td>JetBrains Mono</td><td>תוויות UI</td><td>graphic-atlas</td></tr>
+    </tbody></table>
+  </section>
+  <section><h2>רכיבים ותבניות</h2>
+    <ul>
+      <li><strong>סכמת פרופיל:</strong> YAML frontmatter (name, source, creator, date_profiled, tags) + 10 סקציות מוגדרות</li>
+      <li><strong>Scher Test:</strong> שאלה איכותית חוזרת — האם פאולה שר הייתה מזהה את האתר ללא לוגו וטקסט?</li>
+      <li><strong>Cross-modal:</strong> מיפוי מוזיקה / טקסטורה / טמפרטורה / משקל לכל פרופיל</li>
+      <li><strong>Forbidden Colors:</strong> סקציה ייעודית לכל פרופיל — מה אסור</li>
+      <li><strong>חוק ברזל:</strong> never fabricate hex values — תמיד מ-computed styles או eyedrop</li>
+    </ul>
+  </section>
+  <section><h2>ממצאי בדיקה — סחיפה ממערכת JPSA</h2>
+    <p style="color:var(--muted);font-size:13px">לא רלוונטי — זה קטלוג של מערכות אחרות, לא משטח JPSA. הסחיפה לא נבדקת על פלטות מצוטטות. שני הפרופילים הקיימים (the-way-of-code ו-graphic-atlas) שניהם במשפחת cream-warm-paper — אין anti-pattern hits.</p>
+    <p style="color:var(--muted);font-size:13px;margin-block-start:10px"><strong>כלל תפעולי:</strong> אם אג'נט עתידי יוסיף פרופיל של, נניח, SaaS lavender, יש לתייג <code>anti-pattern-sample</code> כדי שאחרים לא יבחרו אותו כהמלצה.</p>
+  </section>
+  <section><h2>לקחים</h2>
+    <div class="lesson">לעולם אין לבדות hex values — תמיד מ-computed styles או eyedrop tool (CLAUDE.md:24).</div>
+    <div class="lesson">צילומי מסך — PNG מאופטמים, מקסימום 6-8 לפרופיל (CLAUDE.md:67).</div>
+    <div class="lesson">פער תפעולי: catalog.md מתעד רק את the-way-of-code; graphic-atlas קיים כ-profile.md אך לא ב-index.</div>
+  </section>
+  <footer>מקורות: profiles/the-way-of-code/profile.md, profiles/graphic-atlas/profile.md, catalog.md, tags.md, CLAUDE.md · הקובץ הזה מייצג שלב 1 של תיקון העיצוב.</footer>
+</div>
+</body>
+</html>
