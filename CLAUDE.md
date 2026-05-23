@@ -31,13 +31,24 @@ style-vault/
 - **Tags are from a controlled vocabulary** (see tags.md)
 - **Never fabricate hex values** — extract from computed styles or eyedrop tools
 
+## Plugin Structure
+
+This repo is also a Claude Code plugin (registered as `styles@styles-local`).
+- `/.claude-plugin/plugin.json` — manifest
+- `/commands/styles.md` — hub command, routes to styles
+- `/commands/{slug}.md` — per-style shortcut commands
+- `/skills/{slug}/SKILL.md` — style cognitive blueprints (immediately applicable)
+- `/commands/analyze.md` — add new styles via visual-style-forensics
+
 ## How to Add a Style
 
-1. Run `/visual-style-forensics` on the source
-2. Save the profile to `profiles/{slug}/profile.md`
-3. Move screenshots to `profiles/{slug}/screenshots/`
-4. Add entry to `catalog.md`
-5. Tag it
+1. Run `/styles:analyze <URL>` (or `/visual-style-forensics` manually)
+2. Save forensic profile to `profiles/{slug}/profile.md`
+3. Create skill at `skills/{slug}/SKILL.md` — extract replication rules, colors, typography, CSS tokens into immediately-applicable format
+4. Create shortcut command at `commands/{slug}.md`
+5. Move screenshots to `profiles/{slug}/screenshots/`
+6. Update `catalog.md`
+7. Sync to plugin cache: `cp -r . ~/.claude/plugins/cache/styles-local/styles/1.0.0/`
 
 ## Commands
 
@@ -79,3 +90,4 @@ tags: [tag1, tag2, ...]
 - Profiles feed into `design_ai_playbook` bible chapters as specimens
 - AI prompt translations (MJ, GPT-4o, Flux) live in each profile
 - CSS tokens can be imported into projects directly
+- `/styles:{slug}` loads the style for immediate use in any Claude Code session
